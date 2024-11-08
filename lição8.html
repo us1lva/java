@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; text-shadow: #a2a2a2 2px 2px 4px; font-family: arial;">Loja de peças</h1>
+    <hr>
+    <h4 style="text-align: center; font-size: 25px;">#03458j  |  RS 20.00  |  Conjunto de 5 peças por RS 100</h4>
+    <h4 style="text-align: center; font-size: 25px;">#04881a  |  RS 35.00  |  Conjunto de 5 peças por RS 175</h4>
+    <hr>
+
+    <div style="text-align: center; font-size: 25px;" id="conj1"></div>
+    <br>
+    <div style="text-align: center; font-size: 25px;" id="conj2"></div>
+    <br /> <br />
+    <div style="text-align: center; font-size: 25px;" id="cal"></div>
+
+    <script>
+        let pc1 = 20
+
+        let conj = parseInt(prompt('Informe a quantidade de conjunto desejado: '))
+        let conjr1 = (pc1 * conj)
+        document.getElementById('conj1').innerHTML = 'A peça de codigo #03458j tem um valor unitario de RS 20.00, escolhendo determinada quantidade mudará. quantos conjuntos deseja? ' + conj + '  O valor total é de RS ' + conjr1 
+        
+        let pc2 = 35
+
+        let conj2 = parseInt(prompt('Informe a quantidade de conjunto desejado: '))
+        let conjr2 = (pc2 * conj2)
+        document.getElementById('conj2').innerHTML = 'A peça de codigo #04881a tem um valor unitario de RS 35.00, escolhendo determinada quantidade mudará. quantos conjuntos deseja? ' + conj2 + '  O valor total é de RS ' + conjr2
+
+        let cal = (conjr1 + conjr2) / 100 + 1
+        document.getElementById('cal').innerHTML = 'a porcentagem do IPI a ser acrescido no valor das peças ficou de ' + cal + "%" 
+
+
+    </script>
+</body>
+</html>

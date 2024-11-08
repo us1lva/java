@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Absurdo de caro</h1>
+    <div style="text-align: center; font-size: 25px;" id="Resul"></div>
+    <script>
+        let real = parseFloat(prompt('Digite sua quantia em cédula R$ '))
+        let dolar = (real / 5.49).toFixed(2)
+        document.querySelector('#Resul').innerHTML = 'A sua quantia de ' + real + ' equivale a US$ ' + dolar 
+    </script>
+</body>
+</html>

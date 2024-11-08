@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Contando os salarios</h1>
+    <div style="text-align: center; font-size: 25px;" id="resultado"></div>
+
+    <script>
+        let salario = parseFloat(prompt('Informe o seu salario: '))
+        let salario_min = 1212.00
+        let salarios = (salario / salario_min).toFixed(1)
+
+        document.getElementById('resultado').innerHTML = 'O salario do usuario de RS ' + salario + ' equivale a ' + salarios + ' salarios minimos' + ' valor do salario minimo atual RS 1212.00 '
+    </script>
+</body>
+</html>

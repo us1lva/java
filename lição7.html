@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Média dos seguintes numeros:</h1>
+    <p style="text-align: center; font-size: 25px;"> 8   9   7</p>
+    <div style="text-align: center; font-size: 25px;" id="resultado"></div>
+    <br>
+    <hr>
+    <p style="text-align: center; font-size: 25px;">4   5   6</p>
+    <div style="text-align: center; font-size: 25px;" id="resultado2"></div>
+    <br>
+    <hr>
+    <p style="text-align: center; font-size: 25px;"> A soma de ambas as médias tem o resultado de: 13 </p>
+    <p style="text-align: center; font-size: 25px;">Média da soma: 6.5</p>
+
+    <script>
+        let n1 = 8
+        let n2 = 9
+        let n3 = 7
+
+        let media1 = (n1 + n2 + n3) / 3
+
+
+        let nu1 = 4
+        let nu2 = 5
+        let nu3 = 6
+
+        let media2 = (nu1 + nu2 + nu3) / 3
+
+        document.getElementById('resultado').innerHTML ='A média dos numeros: ' + n1 + " " + n2 + " " + n3 + " " + " é " + media1;
+        document.getElementById('resultado2').innerHTML = 'A média dos numeros: ' + nu1 + ' ' + nu2 + ' ' + nu3 + ' ' + ' é ' + media2;
+
+    </script>
+</body>
+</html>

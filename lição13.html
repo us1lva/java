@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Testando celcius para fahrenheit</h1>
+    <br>
+    <div style="text-align: center; font-size: 25px;" id="resul"></div>
+    <script>
+        
+        let celcius = parseFloat(prompt( 'Digite quantos graus deseja: '))
+
+        let fire = (celcius * 9/5) + 32
+
+        document.getElementById('resul').innerHTML = 'A conversão de ' + celcius + "°C" + ' para fahrenhite é ' + fire + '°F'
+    </script>
+</body>
+</html>

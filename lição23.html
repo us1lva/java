@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let contador = 0;
+
+for (let i = 1; i <= 3; i++) {
+    let numero = parseInt(prompt('Digite um número: '));
+    
+    if (numero >= 0 && numero <= 100) {
+        document.write('Número ' + numero + ' está entre 0 e 100<br>');
+        contador++;
+    } else {
+        document.write('Número ' + numero + ' não se encaixa entre 0 a 100<br>');
+    }
+    
+    document.write('Número digitado: ' + numero + '<br><br>');
+}
+
+
+document.write('<br><br>');
+
+let contador2 = 0;
+
+for (let i = 1; i <= 3; i++) {
+    let numero2 = parseInt(prompt('Digite um número: '));
+    
+    if (numero2 >= 101 && numero2 <= 200) {
+        document.write('Número ' + numero2 + ' está entre 101 e 200<br>');
+        contador2++;
+    } else {
+        document.write('Número ' + numero2 + ' não se encaixa entre 101 a 200<br>');
+    }
+    
+    document.write('Número escolhido: ' + numero2 + '<br><br>');
+}
+
+document.write('<br><br>');
+
+let contador3 = 0;
+
+for (let i = 1; i <= 3; i++) {
+    let numero3 = parseInt(prompt('Digite um número: '));
+    
+    if (numero3 >= 200) {
+        document.write('Número ' + numero3 + ' é maior que 200<br>');
+        contador3++;
+    }else {
+        document.write('Número ' + numero3 + ' menor que 200<br>');
+    }
+       
+    
+    
+    document.write('Número escolhido: ' + numero3 + '<br><br>');
+}
+
+document.write('Total de números entre 0 e 100: ' + contador + '<br>');
+document.write('Total de números entre 101 e 200: ' + contador2 + '<br>');
+document.write('Total de números maior que 200: ' + contador3);
+    </script>
+</body>
+</html>

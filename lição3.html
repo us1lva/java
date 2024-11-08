@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Saldo médio  |  Percentual</h3>
+    <p>De 0 a 500  |  Nenhum credíto <br>
+       De 501 a 1000  |  30% do valor do salario médio <br>
+       De 1001 a 3000  |  40% do valor do salario médio <br>
+       Acima de 3000  |  50% do valor do salario médio</p>
+
+       <script>
+       let Saldo = parseInt(prompt('Informe o seu saldo: '))
+
+       if(Saldo >= 0 && Saldo <= 500){
+        document.write('Não tem adição de creditos')
+       }else if(Saldo >= 501 && Saldo <= 1000){
+       let porcentagem = Saldo * 0.3
+        document.write("O seu saldo de " + Saldo + " teve um aumento de 30% "  + "Resultando em " + porcentagem + " Do percentual")
+       }else if(Saldo >= 1001 && Saldo <= 3000){
+        let porcentagem = Saldo * 0.4
+        document.write("O seu saldo de " + Saldo + " teve um aumento de 40% "  + "Resultando em " + porcentagem + " Do percentual")
+       }else if(Saldo >= 3000){
+        let porcentagem = Saldo * 0.5
+        document.write("O seu saldo de " + Saldo + " teve um aumento de 50% "  + "Resultando em " + porcentagem + " Do percentual")
+       }
+
+       </script>
+</body>
+</html>
